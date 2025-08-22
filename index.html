@@ -12,6 +12,34 @@
 <body>
     
     <header class="header">
+        <nav class="header__nav">
+        <ul class="menu menu--principal">
+            <li class="menu__item">
+                <a class="menu__link" href="#home">
+                    
+                    <span class="menu__text">Home</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                    
+                    <span class="menu__text">Projetos</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    
+                    <span class="menu__text">Sobre</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#contato">
+                    
+                    <span class="menu__text">Contato</span>
+                </a>
+            </li>
+    </ul>
+    </nav>
         <div class="header__brand">
         <img class="brand__logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.png" alt="Logo">
         </div>
@@ -46,7 +74,72 @@
             </li>
     </ul>
     </nav>
-    <h1>William Araujo silva</h1>
+    <main>
+        <section id="home" class="main__section main__section--home">
+            <div class="home__content">
+                <img src="" alt="Foto de William Araujo" class="home__avatar">
+                <div>
+                    <h1>Bem-vindo! 👋</h1>
+                    <p>
+                        Eu sou <strong>William Araujo</strong>, Desenvolvedor Web Full Stack especializado em JavaScript, React, Node.js e MongoDB.
+                    </p>
+                    <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="main__section main__section--projetos">
+            <h2>Projetos em Destaque</h2>
+            <div class="projetos__grid">
+                <div class="projeto__card">
+                    <img src="https://placehold.co/300x180?text=Projeto+1" alt="Projeto 1">
+                    <h3>Projeto React</h3>
+                    <p>Aplicação moderna utilizando React e integração com API REST.</p>
+                    <a href="#" class="btn btn--secondary">Ver mais</a>
+                </div>
+                <div class="projeto__card">
+                    <img src="https://placehold.co/300x180?text=Projeto+2" alt="Projeto 2">
+                    <h3>Dashboard Node.js</h3>
+                    <p>Dashboard interativo com backend Node.js e banco MongoDB.</p>
+                    <a href="#" class="btn btn--secondary">Ver mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="main__section main__section--sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou apaixonado por tecnologia, inovação e desenvolvimento web. Tenho experiência em projetos de diferentes segmentos, sempre buscando as melhores soluções para cada desafio.
+            </p>
+            <ul class="sobre__skills">
+                <li><i class="bi bi-check-circle"></i> JavaScript</li>
+                <li><i class="bi bi-check-circle"></i> React</li>
+                <li><i class="bi bi-check-circle"></i> Node.js</li>
+                <li><i class="bi bi-check-circle"></i> MongoDB</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="main__section main__section--contato">
+            <h2>Contato</h2>
+            <form class="contato__form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn btn--primary">Enviar</button>
+            </form>
+            <div class="contato__social">
+                <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:email@email.com"><i class="bi bi-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            Todos os direitos reservados &copy; 2025 William Araujo. 
+        </p>
+    </footer>
     
 </body>
 </html>
